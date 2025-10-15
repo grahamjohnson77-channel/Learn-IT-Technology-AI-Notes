@@ -18,7 +18,7 @@ https://ollama.com/library
 # GitHub:
 https://github.com/grahamjohnson77-channel/Learn-IT-Technology-AI-Notes
 
-# Create Folder:
+# Create Folder on Pi
 1_ollama-local-llm-docker
 
 # To Run: 
