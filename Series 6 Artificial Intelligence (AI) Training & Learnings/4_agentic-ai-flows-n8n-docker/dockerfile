@@ -1,0 +1,17 @@
+# To Run the App from the Cmd Line (INTERACTIVELY!)
+# docker build -t agentic-ai-flows-n8n-docker .
+# docker run -it agentic-ai-interactive-docker
+# docker run -it --rm -p 5678:5678 -v ~/.n8n:/home/node/.n8n agentic-ai-flows-n8n-docker
+
+# Use the official n8n image as the base
+FROM n8nio/n8n
+
+# Optional: Set environment variables directly here (or use docker-compose/env file)
+ENV N8N_BASIC_AUTH_ACTIVE=true
+ENV N8N_BASIC_AUTH_USER=admin
+ENV N8N_BASIC_AUTH_PASSWORD=securepassword
+# Optional: Copy custom workflows or credentials
+# COPY ./workflows /home/node/.n8n
+
+# Expose the default port
+EXPOSE 5678
