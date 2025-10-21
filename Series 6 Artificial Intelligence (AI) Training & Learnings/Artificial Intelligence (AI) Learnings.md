@@ -19,6 +19,10 @@
     - n8n Self Starter Kit
     - https://n8n.io/
 
+6_book-recommender-rag-working-example
+    - 
+    -
+
 
 Fine-tuning Ollama models
 Google CoLab (Training Models)

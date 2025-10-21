@@ -2,8 +2,8 @@
 brew install docker docker-compose
 
 # Docker commands:
-docker image ls						        # list docker images currently available!
-docker container ls 				      # list docker containers currently available
+docker image ls						  # list docker images currently available!
+docker container ls 				  # list docker containers currently available
 docker stop <container name>		  # stop container name
 docker rm $(docker ps -a -q)		  # Remove all stopped containers
 docker image rm -f <image name>		# To remove an image (forcefully)
