@@ -108,6 +108,7 @@ classifier("I love this!")
 # 04 VECTOR SEARCH SECTION - 38mins in video
 Textloader will be used for raw data for langchain.
 Chroma will be used as the vector db
+OpenAI is used for the embeddings
 
 1. Create OpenAI key
 Create an OpenAI account: 
@@ -143,7 +144,7 @@ text_splitter = CharacterTextSplitter(chunk_size=safe_chunk_size, chunk_overlap=
 
 documents = text_splitter.split_documents(raw_documents)
 
-6. Remember: Chroma will create a Vector DB
+6. Remember: Chroma will create a Vector DB ... OpenAI is used for the embeddings.
 
 7. Changed this line (but should be .env file):
 db_books = Chroma.from_documents(
