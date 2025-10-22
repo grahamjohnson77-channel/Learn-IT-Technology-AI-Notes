@@ -67,6 +67,13 @@ Issues:
 Go to terminal in vs code and run: 
 pip install jupyter and ipywidgets
 
+# Change Terminal font size
+🛠️ Method 1: Change Terminal Font Size via Settings
+Open Command Palette: Press Ctrl + Shift + P (or Cmd + Shift + P on macOS).
+Type and select Preferences: Open Settings (UI).
+In the search bar, type terminal font size.
+Adjust the Terminal › Integrated: Font Size setting (default is usually 14). Increase it to your desired size (e.g., 16 or 18).
+
 # VS Code Switch (Run from terminal)
 source /Users/gjohnson/Downloads/6_book-recommender-rag-working-example/.venv/bin/activate
 
