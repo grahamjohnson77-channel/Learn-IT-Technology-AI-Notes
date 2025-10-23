@@ -19,10 +19,24 @@
     - n8n Self Starter Kit
     - https://n8n.io/
 
-6_book-recommender-rag-working-example
-    - 
-    -
+5_1_Bonus
+    - Docker image/container ls
 
+6_book-recommender-rag-working-example
+    - ChromaDB/OpenAI Embeddings Model
+    - Python Transformers
+
+6_1_Bonus
+    - Test OpenAI Connection
+
+7_fine-tune-llam3-llm-ollama
+    - Google CoLab
+    - Unsloth Free Finetuning
+    - gguf Model Files
+    - Test Using Ollama (on Docker)
+
+7_1_Bonus
+    - iTerm2 Terminal
 
 Fine-tuning Ollama models
 Google CoLab (Training Models)
