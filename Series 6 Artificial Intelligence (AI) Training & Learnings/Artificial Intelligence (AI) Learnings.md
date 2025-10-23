@@ -38,23 +38,11 @@
 7_1_Bonus
     - iTerm2 Terminal
 
-Fine-tuning Ollama models
-Google CoLab (Training Models)
-Dataset (Kaggle)
-Pycharm (Venv)
-Jupyter
-Vector Search (DB Chroma+Chunks)
-Text Classification (Hugging Face)
-Sentiment Analysis (Happy, Sad emotions)
-Gradio Dashboard (Model UI Visual)
+To Do:
 Langchain (LLM apps) -> OpenAI
 Fabrk CLI (Augment Humans)
 NGROK (Local -> Public Domain)
-Hugging Face (Pre-trained Models)
-Streamlit (Python and Code Web App)
 Intents (Python+UI)
-
-To Do:
 MCP Server
 LangChain (Agents)
 Rag Pipelines
