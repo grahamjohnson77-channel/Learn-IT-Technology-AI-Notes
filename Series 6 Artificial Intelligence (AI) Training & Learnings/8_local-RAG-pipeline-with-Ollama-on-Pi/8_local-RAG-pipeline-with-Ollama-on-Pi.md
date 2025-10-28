@@ -251,5 +251,3 @@ streamlit run 4_streamlit_rag_chatbot_no_vectordb_regen.py --server.address 0.0.
 # Sample questions
 What is langchain used for?
 How does Bright Data collect proxy information?
-
-http://192.168.1.102:8501/
