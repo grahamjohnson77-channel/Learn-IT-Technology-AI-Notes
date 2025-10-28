@@ -38,6 +38,13 @@
 7_1_Bonus
     - iTerm2 Terminal
 
+8_local-RAG-pipeline-with-Ollama
+    - BrightData for Web Scraping
+    - Huggingface Embedding Model (for Text Chunking)
+    - ChromaDB
+    - Huggingface Model for Loading Vector DB
+    - Python Retriever or Streamlit
+
 To Do:
 Langchain (LLM apps) -> OpenAI
 Fabrk CLI (Augment Humans)
