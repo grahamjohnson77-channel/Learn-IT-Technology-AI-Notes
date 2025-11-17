@@ -65,7 +65,7 @@ Open source and widely trusted (by GitHub, AWS, etc.).
 python3 -m venv .venv
 source .venv/bin/activate
 
-# Running trivy on Docker Directly
+# Part 1: Running trivy on Docker Directly
 docker run --rm aquasec/trivy:latest image python:3.10
 
 --rm → removes the container after it finishes.
@@ -108,6 +108,8 @@ trivy image ubuntu:latest
 trivy fs /root/project
 
 # #########################
+
+# Part 2: DockSec
 
 # 📌 DockSec Notes
 DockSec is an AI-powered Docker security analyzer.
