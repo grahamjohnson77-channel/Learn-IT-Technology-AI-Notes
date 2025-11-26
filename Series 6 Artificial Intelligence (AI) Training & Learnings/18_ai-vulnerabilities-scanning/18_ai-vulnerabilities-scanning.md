@@ -62,7 +62,7 @@ Fast incremental scans (caches the DB).
 Open source and widely trusted (by GitHub, AWS, etc.).
 
 # Install venv
-python3 -m venv .venv
+python3.12 -m venv .venv
 source .venv/bin/activate
 
 # Part 1: Running trivy on Docker Directly
@@ -110,6 +110,7 @@ trivy fs /root/project
 # #########################
 
 # Part 2: DockSec
+https://github.com/advaitpatel/DockSec
 
 # 📌 DockSec Notes
 DockSec is an AI-powered Docker security analyzer.
@@ -123,6 +124,12 @@ Security best practices
 # To download DockSec
 pip install docksec
 docksec --help
+
+# Download older version of langchain (as Docksec had issues with latest)
+pip install "langchain==0.0.350" "langsmith==0.0.70" "openai==0.28"
+
+Then test if this works:
+python -c "from langchain.prompts import PromptTemplate; print('OK')"
 
 Docker Security Analysis Tool:
 
@@ -197,6 +204,20 @@ docker run --rm \
   --format json -o /root/trivy/trivy-report.json
 
 docksec trivy-report.json -o docksec-report.html
+
+If you see this error:
+(.venv) gjohnson@Graham 18_ai-vulnerabilities-scanning % python -c "import langchain.prompts; print('LangChain prompts OK')"
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import langchain.prompts; print('LangChain prompts OK')
+
+🔎 What Happened
+LangChain recently refactored its package structure.
+
+The old langchain.prompts module was moved into langchain_core.prompts.
+
+If docksec is written against older LangChain versions, it will still try to import langchain.prompts, which doesn’t exist in the latest releases.
 
 DockSec will enrich the Trivy findings with AI‑based remediation suggestions.
 
